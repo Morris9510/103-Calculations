@@ -24,3 +24,4 @@ function convert() {
   temperature = (temperature * 9) / 5 + 32;
   console.log(temperature);
 }
+const temperature = convert;
