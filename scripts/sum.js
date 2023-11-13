@@ -1,27 +1,21 @@
-function sum() {
-  let a = prompt("Enter the first value (a):");
-
-  let b = prompt("enter the second value(b):");
-
-  let total;
-  total = Number(a) + Number(b);
-
-  console.log(total);
-}
-
-function mult() {
-  let a = prompt("Enter a value here(a):");
-
-  let b = 5;
-
-  totalMult = Number(a) * b;
-
-  console.log(totalMult);
-}
-
+//assignment 2
 function convert() {
   let temperature = Number(prompt("Enter the temperature in Celsius"));
   temperature = (temperature * 9) / 5 + 32;
   console.log(temperature);
 }
-const temperature = convert;
+
+//assignment 3
+function convertTemperature() {
+  let start = Number(prompt("Enter the temperature"));
+  let scale = prompt("Enter the scale (C or F)");
+  if (scale === "C") {
+    start = (start * 9) / 5 + 32;
+    console.log(start + " °F");
+  } else if (scale === "F") {
+    start = ((start - 32) * 5) / 9;
+    console.log(start + " C");
+  } else {
+    console.log("Use celsius or Fahrenheit");
+  }
+}
